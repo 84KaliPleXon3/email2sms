@@ -14,13 +14,13 @@ from subprocess import Popen, PIPE
 
 def sendMail(n):
     msg = MIMEText("Chk mail.")
-    msg["From"] = "guptask@mail.uc.edu"
-    msg["To"] = "5135806720@tmomail.net"
-    msg["Subject"] = "mails"
+    msg["From"] = "user@domain"
+    msg["To"] = "1234567890@tmomail.net"
+    msg["Subject"] = "Unread mail"
     p = Popen(["/usr/sbin/sendmail", "-t"], stdin=PIPE)
     p.communicate(msg.as_string())
 
-username = "sounak.besu@gmail.com"
+username = "user@gmail.com"
 password = getpass.getpass("Password: ")
 g = gmail.login(username, password)
 if g.logged_in: print "Logged in"

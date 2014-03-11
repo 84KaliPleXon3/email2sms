@@ -1,3 +1,5 @@
+Email2SMS
+
 Author: Sounak Gupta
 
 This is a script that checks your gmail account and informs you via 
